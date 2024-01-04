@@ -7,7 +7,7 @@ bool cdll_init(cdll* list) {
 	if (list == NULL) {
 		return false;
 	} else {
-		list->head = (cdll_node*)0;
+		list->head = (cdll_node*)NULL;
 		return true;
 	}
 }
