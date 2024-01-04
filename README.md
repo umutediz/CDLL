@@ -1,3 +1,2 @@
-# repository-template
-I am trying to commit something.
-This commit is successfully blocked by branch protection rules.
+# Circular Double Linked List
+This repository provides a reusable CDLL implementation.
