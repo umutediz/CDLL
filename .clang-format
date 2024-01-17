@@ -6,11 +6,16 @@ ColumnLimit: 0
 Language: Cpp
 
 AlignEscapedNewlines: Left
-AlignConsecutiveDeclarations: false
-AlignConsecutiveAssignments: false
 AlignAfterOpenBracket: Align
 AlignOperands: true
 AlignTrailingComments: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveAssignments: false
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortBlocksOnASingleLine: false
 AllowShortCaseLabelsOnASingleLine: false
@@ -70,7 +75,3 @@ SpacesInContainerLiterals: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
 InsertBraces: false
-AlignConsecutiveBitFields: Consecutive
-
-
-
