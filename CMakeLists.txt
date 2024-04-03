@@ -8,7 +8,7 @@ if(NOT TARGET cdll)
     add_library(cdll cdll.c)
     target_include_directories(cdll PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
     
-    if(BUILD_TESTING)
+    if(BUILD_TESTING AND NOT CMAKE_CROSSCOMPILING)
         add_subdirectory(tests)
     endif()
 endif()
