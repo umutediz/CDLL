@@ -5,19 +5,19 @@
 #include <stdint.h>
 
 typedef volatile struct s_cdll_node cdll_node;
-typedef volatile struct s_cdll cdll;
+typedef volatile struct s_cdll		cdll;
 
-typedef volatile struct s_cdll {
+struct s_cdll {
 	cdll_node* head;
-} cdll;
+};
 
-typedef volatile struct s_cdll_node {
-	cdll* list;
+struct s_cdll_node {
+	cdll*	   list;
 	cdll_node* next;
 	cdll_node* prev;
-	void* owner;
-	uintmax_t value;
-} cdll_node;
+	void*	   owner;
+	uintmax_t  value;
+};
 
 bool cdll_init(cdll* list);
 bool cdll_append(cdll* list, cdll_node* node);

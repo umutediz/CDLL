@@ -1,7 +1,7 @@
-#include "cdll.h"
-
 #include <limits.h>
 #include <stddef.h>
+
+#include "cdll.h"
 
 bool cdll_init(cdll* list) {
 	if (list == NULL) {

@@ -13,7 +13,7 @@ GTEST_TEST(cdll_tests, test_init) {
 }
 
 GTEST_TEST(cdll_tests, test_append_empty) {
-	cdll l;
+	cdll	  l;
 	cdll_node node;
 	node.value = 5;
 
@@ -29,7 +29,7 @@ GTEST_TEST(cdll_tests, test_append_empty) {
 }
 
 GTEST_TEST(cdll_tests, test_append) {
-	cdll l;
+	cdll	  l;
 	cdll_node n1;
 	cdll_node n2;
 	cdll_node n3;
@@ -63,7 +63,7 @@ GTEST_TEST(cdll_tests, test_append) {
 }
 
 GTEST_TEST(cdll_tests, test_sort_insert) {
-	cdll l;
+	cdll	  l;
 	cdll_node nodes[5];
 
 	unsigned int values[5] = {510, 106, 1000000, 0, (unsigned int)-1};
@@ -90,7 +90,7 @@ GTEST_TEST(cdll_tests, test_sort_insert) {
 }
 
 GTEST_TEST(cdll_tests, test_remove_node) {
-	cdll l;
+	cdll	  l;
 	cdll_node nodes[5];
 
 	EXPECT_TRUE(cdll_init(&l) == true);
@@ -115,7 +115,7 @@ GTEST_TEST(cdll_tests, test_remove_node) {
 }
 
 GTEST_TEST(cdll_tests, test_remove_node_different_list) {
-	cdll l, k;
+	cdll	  l, k;
 	cdll_node node;
 
 	EXPECT_TRUE(cdll_init(&l) == true);
